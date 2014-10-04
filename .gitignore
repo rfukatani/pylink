@@ -1,0 +1,9 @@
+*.vhd
+*.dbs
+*.dat
+*.psm
+work/
+*.pyc
+*.mti
+*.mpf
+*.wlf

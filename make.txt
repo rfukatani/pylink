@@ -1,0 +1,20 @@
+#if you didn't make work directory.
+vlib work
+vlog -novopt -dpiheader dpiheader.h top.sv
+
+#export verilog function
+vsim top -dpiexportobj cexports.obj -c
+
+#compile
+gcc -c -g -I C:\Python27\include -L C:\Python27\libs -lpython27 call_python_class.c -o call_python_class.obj
+
+#make dll(at command prompt)
+gcc -shared -I C:\Python27\include -L C:\Python27\libs -o cimports.dll call_python_class.obj cexports.obj C:\altera\14.0\modelsim_ase\win32aloem\mtipli.dll -lpython27
+
+vsim -c -sv_lib cimports top -do "add wave -r /*;run -all;quit -sim"
+
+#from http://dora.bk.tsukuba.ac.jp/~takeuchi/index.php?%C5%C5%B5%A4%B2%F3%CF%A9%2FHDL%2FModelSim%20XE%20%A4%F2%BB%C8%A4%C3%A4%BF%20SystemVerilog%20DPI-C%20%A5%C6%A5%B9%A5%C8
+
+
+#’P“Æ
+gcc .\call_class3.c -I C:\Python27\include -L C:\Python27\libs -lpython27 -o call_class
