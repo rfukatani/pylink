@@ -62,6 +62,7 @@ modelsimにて、top.svをコンパイルしてください。
 そして以下のコマンドをmodelsim上で入力し、dll作成に必要なファイルを吐き出させます。
 >>>vlog -novopt -dpiheader dpiheader.h top.sv
 >>>vsim top -dpiexportobj cexports.obj -c
+
 windowsのコマンドプロンプトから、以下を実行し、dllを作成してください。
 >>>gcc -c -g -I C:\Python27\include -L C:\Python27\libs -lpython27 call_python_class.c -o call_python_class.obj
 >>>gcc -shared -I C:\Python27\include -L C:\Python27\libs -o cimports.dll call_python_class.obj cexports.obj C:\altera\14.0\modelsim_ase\win32aloem\mtipli.dll -lpython27
