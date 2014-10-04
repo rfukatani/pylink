@@ -9,7 +9,7 @@ Link python model and RTL simulation.
 
 使用するための準備：
 
-一応全部フリーで揃えられるようにしています(Windows以外)。著者が試した環境ですが、他のverilogシミュレータやPythonのバージョンでもコード自体は動作すると思います。makeの手順は変わると思いますが。
+一応全部フリーで揃えられるようにしています(Windows以外)。以下は著者が試した環境ですが、他のverilogシミュレータやPythonのバージョンでもコード自体は動作すると思います。makeの手順は変わると思いますが。
 
 OS:
 Windows 7
