@@ -1,4 +1,21 @@
-//gcc .\call_class3.c -I C:\Python27\include -L C:\Python27\libs -lpython27 -o call_class
+/*
+	Copyright (C) 2014 Ryosuke Fukatani All Rights Reserved
+	
+    This file is part of pylink.
+
+    pylink is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 2 of the License, or
+    (at your option) any later version.
+
+    pylink is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with pylink.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 #include <Python.h>
 #include <stdio.h>
