@@ -179,6 +179,8 @@ class data_monitor:
         if self.log_enable:
             self.log_file.write(str(time)+","+str(np.real(data)).strip(" []")+"\n")
     def display_graph(self):
+        if not self.log_enable:
+            return
         if not self.log_file.closed:
             self.log_file.close()
 
