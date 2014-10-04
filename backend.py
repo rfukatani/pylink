@@ -49,7 +49,8 @@ def get_data_from_logfile(log_file,standardization = 0):
 
     log_file.close()
     if standardization:
-        y = y/np.max(y)
+        if np.max(y) != 0:
+            y = y/np.max(y)
     return t,y
 
 def main():
