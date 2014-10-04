@@ -6,6 +6,9 @@ Link python model and RTL simulation.
 
 “–ŠY‚ÌƒvƒƒWƒFƒNƒg‚Ìƒ‰ƒCƒZƒ“ƒX‚ÍGPLV2‚Å‚·B¤—p–â‚í‚¸ƒtƒŠ[‚Å—˜—p‚Å‚«‚Ü‚·‚ªA•ÏXEC®‚ª‚ ‚é‚È‚¢‚ÉŠÖ‚í‚ç‚¸Ä”Ğ•z‚·‚éê‡‚Í‚±‚ÌƒvƒƒWƒFƒNƒg‚ÌƒR[ƒh‚ğŠÜ‚ñ‚Å‚¢‚é‚±‚Æ‚ğ–¾‹L‚µAƒ\[ƒXƒR[ƒh‚ğ‘S‚ÄŠJ¦‚·‚é‹`–±‚ª‚ ‚è‚Ü‚·B‚Ü‚½A‚±‚ÌƒR[ƒh‚ğ—˜—p‚µ‚½‚±‚Æ‚É‚æ‚èó‚¯‚½‘¹ŠQ‚ÌÓ–±‚ğ’˜ìÒ‚Í•‰‚¢‚Ü‚¹‚ñBÚ×‚ÍLICENSE‚ğ‚²——‚­‚¾‚³‚¢B
 
+–{ƒvƒƒWƒFƒNƒg‚Ì–Ú“I:
+scipy,numpy‚È‚Ç‚Ì–L•x‚È‰ÈŠw‹ZpŒvZƒ‰ƒCƒuƒ‰ƒŠ‚ğ‚ÂPython‚ğDPI-CŒo—R‚ÅRTLŒŸØŠÂ‹«‚©‚ç’@‚­‚±‚Æ‚É‚æ‚èAPython‚Å‹Lq‚³‚ê‚½ƒAƒiƒƒO‰ñ˜H‚â•¨—ƒ‚ƒfƒ‹‚ÆRTL‚Å‹Lq‚³‚ê‚½ƒfƒWƒ^ƒ‹‰ñ˜H‚ğ•Às‚µ‚ÄƒVƒ~ƒ…ƒŒ[ƒVƒ‡ƒ“‚·‚é‚±‚Æ‚ª–Ú“I‚Å‚·B
+
 
 g—p‚·‚é‚½‚ß‚Ì€”õF
 
@@ -17,7 +20,7 @@ Windows 7
 Python:
 ver2.7‚ğg—p‚µ‚Ä‚¢‚Ü‚·B
 
-numpy,scipy:
+numpy,scipy,matplotlib:
 2014.10.04“_‚Å‚ÌÅV”Å‚ğg—p
 
 verilog simulator:
@@ -48,7 +51,7 @@ DPI-Cƒ^ƒXƒN‚ğŒÄ‚Ño‚·topƒ‚ƒWƒ…[ƒ‹‚ÆADM†‚ğˆ—‚·‚éƒ‚ƒWƒ…[ƒ‹sinc_filter‚ğŠÜ‚ñ‚
 python’P‘Ì‚Ìê‡:
 pylink.py‚Ìmain‚ğÀs‚µ‚Ä‚­‚¾‚³‚¢B
 
-c‚©‚çŒÄ‚Ño‚·:
+c-python‚ÅÀs:
 call_class_python.c‚ğ‰º‹L‚Ì‚æ‚¤‚ÉƒRƒ“ƒpƒCƒ‹‚µ‚ÄÀs‚µ‚Ä‚­‚¾‚³‚¢B
 
 >>>gcc .\call_python_class.c -I C:\Python27\include -L C:\Python27\libs -lpython27 -o call_python_class
@@ -70,6 +73,7 @@ windows‚ÌƒRƒ}ƒ“ƒhƒvƒƒ“ƒvƒg‚©‚çAˆÈ‰º‚ğÀs‚µAdll‚ğì¬‚µ‚Ä‚­‚¾‚³‚¢B
 ‚±‚±‚Ü‚Å‚ªdllì¬Bdll‚ª‚Å‚«‚½‚çAÄ‚Ñmodelsim‚É–ß‚èA
 >>>vsim -c -sv_lib cimports top -do "add wave -r /*;run -all;quit -sim"
 ‚µ‚Ä‚­‚¾‚³‚¢B
+
 
 ‰ü•Ï‚ÌƒRƒc:
 dll‚Ì•ÏX‚ğ‚Å‚«‚é‚¾‚¯Œ¸‚ç‚·(=.cƒtƒ@ƒCƒ‹‚ğ•ÒW‚µ‚È‚¢)‚Ì‚ªƒRƒc‚Å‚·B
