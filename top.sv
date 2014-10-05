@@ -31,16 +31,17 @@ module top;
    import "DPI-C" context task py_exe(input int a, output int o);
    import "DPI-C" context task py_func(string func_name);
    import "DPI-C" context task py_start(input real time_step, input int divide_num);
+   //divided num is debug variable,default:1
    import "DPI-C" context task py_end();
 
       initial begin
-         py_start(0.005,8);
+         py_start(0.005,1);
          RST=1'b1;
          #10;
          RST=1'b0;
          CLK=1'b0;
          
-         for(int i=0;i<3000;i++) begin
+         for(int i=0;i<5000;i++) begin
             #10;
             CLK=1'b0;
             py_exe(sinc.dif3, ret);

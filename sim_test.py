@@ -1,6 +1,6 @@
 
 #	Copyright (C) 2014 Ryosuke Fukatani All Rights Reserved
-#	
+#
 #    This file is part of pylink.
 #
 #    pylink is free software: you can redistribute it and/or modify
@@ -22,6 +22,8 @@ from numpy.random import randn
 from scipy import signal
 from matplotlib.pyplot import plot, legend, show, hold, grid, figure, savefig
 import os.path
+import warnings
+import time
 
 
 debug = False
@@ -121,7 +123,7 @@ class time_driven_simulator:
 
 #initialize monitor
         self.inmonitor = data_monitor("in")
-        self.monitor = data_monitor("out",False)
+        self.monitor = data_monitor("out")
         self.dsmonitor = data_monitor("dsout",False)
         self.sincmonitor = data_monitor("sinc")
         self.rtlsincmonitor = data_monitor("rtl_sinc")
@@ -144,9 +146,10 @@ class time_driven_simulator:
         sig_t = self.sig_h.val_t(t_in)
         noise_t = self.noise_h.val_t(t_in)
 
-#need initial condition(last_result)
-        _, out_t = signal.dlsim5((self.filter1_b,self.filter1_a,self.dt),\
-                    sig_t+noise_t,t_in,self.sig_h.current_val)
+        _, out_t,__ = signal.lsim((self.filter1_b,self.filter1_a),sig_t+noise_t,t_in,self.sig_h.current_val)
+
+        #late: >2s for 500step
+        #_, out_t,__ = signal.lsim2((np.real(self.filter1_b),np.real(self.filter1_a)),sig_t+noise_t,t_in,self.sig_h.current_val,atol=1.0e-3,rtol=1.0e-3)
 
         self.dsm.get_next_state(out_t[-1])
         self.sinc.get_next_state(self.dsm.out)
@@ -224,14 +227,16 @@ def get_data_from_logfile(log_file):
     log_file.close()
     return t,y
 
-
 #should be execute by c++
 def main():
+    start = time.time()
     simulator = time_driven_simulator(time_step=0.002,divide_num=8)
-    simulator.set_condition(0.002,8)
+    simulator.set_condition(0.002,1)
     for step in range(5000):
         simulator.get_next_state(0)
-    #simulator.sim_end()
+    elapsed_time = time.time() - start
+    print("elapsed time:"+str(elapsed_time))
+   #simulator.sim_end()
 
 
 if __name__ == '__main__':

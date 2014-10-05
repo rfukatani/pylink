@@ -85,6 +85,9 @@ Python,C,systemverilog‚Ì‚Ç‚ê‚ª‚¨‚©‚µ‚¢‚©‚í‚©‚ç‚È‚­‚È‚Á‚½‚çAverilog simulator‚Å‘
 
 C-Python‚Å“®‚©‚·ê‡‚àPython‚¾‚¯‚Ì‰ü•Ï‚Å‚ ‚ê‚ÎƒRƒ“ƒpƒCƒ‹‚Í•K—v‚ ‚è‚Ü‚¹‚ñB
 
+¡Œã‚â‚è‚½‚¢‚±‚Æ:
+‚‘¬‰»AƒhƒLƒ…ƒƒ“ƒg‚Ì[ŽÀAetcc
+
 
 —š—ð
 2014.10.04:‚Æ‚è‚ ‚¦‚¸“®‚­”Å‚Æ‚µ‚ÄŒöŠJ‚µ‚Ü‚µ‚½BFX‚Æ•s”õ‚Í‚ ‚è‚Ü‚·‚ªA‚²Žw“E‚¢‚½‚¾‚¯‚ê‚ÎK‚¢‚Å‚·B

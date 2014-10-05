@@ -19,6 +19,7 @@
 
 #include <Python.h>
 #include <stdio.h>
+#include <time.h>
 
 //#define debug
 
@@ -29,10 +30,13 @@ int main(void){
 	int i;
 	
 	printf("start\n");
+	clock_t start,end;
+	start = clock();
 	
-	py_start(0.005,16);
 	
-	for (i=0;i<1000;i++){
+	py_start(0.002,1);
+	
+	for (i=0;i<5000;i++){
 		py_exe(5,&a);
 	}
 	
@@ -40,6 +44,8 @@ int main(void){
 	
 	//py_func("sim_end");
 	py_end();
+	end = clock();
+	printf("elapsed time:%f\n",(double)(end-start)/CLOCKS_PER_SEC);
 	
 	
 	return 0;
