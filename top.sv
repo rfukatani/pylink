@@ -41,7 +41,7 @@ module top;
          RST=1'b0;
          CLK=1'b0;
          
-         for(int i=0;i<5000;i++) begin
+         for(int i=0;i<2500;i++) begin
             #10;
             CLK=1'b0;
             py_exe(sinc.dif3, ret);

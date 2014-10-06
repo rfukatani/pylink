@@ -1,6 +1,6 @@
 
 #	Copyright (C) 2014 Ryosuke Fukatani All Rights Reserved
-#	
+#
 #    This file is part of pylink.
 #
 #    pylink is free software: you can redistribute it and/or modify
@@ -20,7 +20,7 @@
 import numpy as np
 import os
 from scipy import signal
-from matplotlib.pyplot import plot, legend, show, hold, grid, figure, savefig, xlim
+from matplotlib.pyplot import plot, legend, show, hold, grid, figure, savefig, xlim,xlabel,ylabel,title
 
 def display_graph(standardization = 0):
     signal_names = []
@@ -40,6 +40,9 @@ def display_graph(standardization = 0):
         plot(t, y, 'k',color = colors[i], linewidth=1.75)
         i+=1
     legend((signal_names), loc='best')
+    xlabel("Time [s]", fontsize=20, fontname='serif')
+    ylabel("normalized signal", fontsize=20, fontname='serif')
+    title("simulation result", fontsize=25, fontname='serif')
     hold(False)
     grid(True)
 
@@ -84,7 +87,10 @@ def get_corr():
     figure()
     plot(t2, cor, 'k',color = 'b', linewidth=1.75)
     xlim(-4,4)
-    legend("cross correlation", loc='best')
+    #legend("cross cor.", loc='best')
+    xlabel("Time [s]", fontsize=20, fontname='serif')
+    ylabel("cross correlation", fontsize=15, fontname='serif')
+    title("correlation between input and rtl_out", fontsize=20, fontname='serif')
     hold(False)
     grid(True)
     show()
