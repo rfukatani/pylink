@@ -6,12 +6,7 @@ Link python model and RTL simulation.
 ###本プロジェクトの目的:
 scipy,numpyに代表される豊富な科学技術計算向けオープンソースライブラリを持つPythonを、DPI-C経由でRTL検証環境から叩くことにより、Pythonで記述されたアナログ回路や物理モデルとRTLで記述されたデジタル回路を並行してシミュレーションすることが目的です。モデル化によってFast SPICE系シミュレータより高速にシステムレベルシミュレーションを行います。結果はこんな感じ↓
 
-<a target="_blank"
-    href="./result.PNG">
-    <img style="max-width:100%;" alt="my image"
-        src="/mino0123/image/raw/master/my_image.png">
-</a>
-![Alt text]("images/result.PNG")
+![Alt text]("./images/result.PNG")
 
 ###使用するための準備：
 実行環境は全てフリーで揃えられるようにしています(Windows以外)。以下は著者が試した環境ですが、他のverilogシミュレータやPythonのバージョンでもコード自体は動作すると思います。makeの手順は変わると思いますが。
