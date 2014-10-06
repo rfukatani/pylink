@@ -11,17 +11,13 @@ scipy,numpyに代表される豊富な科学技術計算向けオープンソースライブラリを持つPytho
 ###使用するための準備：
 実行環境は全てフリーで揃えられるようにしています(Windows以外)。以下は著者が試した環境ですが、他のverilogシミュレータやPythonのバージョンでもコード自体は動作すると思います。makeの手順は変わると思いますが。
 
-OS:
-Windows 7
+* OS:Windows 7
 
-Python:
-ver2.7を使用しています。
+* Python:ver2.7を使用
 
-numpy,scipy,matplotlib:
-2014.10.04時点での最新版を使用
+* numpy,scipy,matplotlib:最新版を使用
 
-verilog simulator:
-Modelsim Altera STARTER EDITION 10.1e
+* verilog simulator:Modelsim Altera STARTER EDITION 10.1e
 
 
 ###構成:
