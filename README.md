@@ -48,14 +48,14 @@ https://github.com/rfukatani/pylink/releases/download/v0.1/call_python_class.exe
 https://github.com/rfukatani/pylink/releases/download/v0.1/cimports.dll
 
 ###使い方:
-①Python単体、②C-Python、③verilog simulator-C-Pythonの三つの環境で実行できます。
+①Python単体、②CからPythonを叩く、③verilog simulator-C-Pythonの三つの環境で実行できます。
 ①②の場合、RTLからの結果はゼロとみなされデータに格納されます。
 いずれの場合も結果はbackend.pyを実行して確認します。
 
 * Python単体の場合:
 pylink.pyのmainを実行してください。
 
-* c-Pythonで実行:
+* CからPythonを叩いて実行:
 call_class_python.cを下記のようにコンパイルして実行してください。
 
 >>>gcc .\call_python_class.c -I C:\Python27\include -L C:\Python27\libs -lpython27 -o call_python_class
