@@ -11,6 +11,7 @@ scipy,numpyに代表される豊富な科学技術計算向けオープンソースライブラリを持つPytho
     <img style="max-width:100%;" alt="my image"
         src="/mino0123/image/raw/master/my_image.png">
 </a>
+![Alt text]("images/result.PNG")
 
 ###使用するための準備：
 実行環境は全てフリーで揃えられるようにしています(Windows以外)。以下は著者が試した環境ですが、他のverilogシミュレータやPythonのバージョンでもコード自体は動作すると思います。makeの手順は変わると思いますが。
