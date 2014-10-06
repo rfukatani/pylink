@@ -36,24 +36,52 @@ PythonAPIによりpythonクラス、関数を呼ぶためのラッパーです。
     * top.sv:
 DPI-Cタスクを呼び出すtopモジュールとAD信号を処理するモジュールsinc_filterを含んでいます。
 
+###インストール
+>>>git clone https://github.com/rfukatani/pylink.git
+してください。
+バイナリファイルは必要に応じてダウンロードしてください。ソースファイルからコンパイルすることも可能です。使用する場合はソースファイルと同じディレクトリにおく必要があります。
+
+コンパイル済cファイルは下記リンクから入手できます↓
+https://github.com/rfukatani/pylink/releases/download/v0.1/call_python_class.exe
+
+構成済dllは下記リンクからダウンロードします↓
+https://github.com/rfukatani/pylink/releases/download/v0.1/cimports.dll
+
 ###使い方:
 ①Python単体、②C-Python、③verilog simulator-C-Pythonの三つの環境で実行できます。
 ①②の場合、RTLからの結果はゼロとみなされデータに格納されます。
 いずれの場合も結果はbackend.pyを実行して確認します。
 
-Python単体の場合:
+* Python単体の場合:
 pylink.pyのmainを実行してください。
 
-c-Pythonで実行:
+* c-Pythonで実行:
 call_class_python.cを下記のようにコンパイルして実行してください。
 
 >>>gcc .\call_python_class.c -I C:\Python27\include -L C:\Python27\libs -lpython27 -o call_python_class
 >>>call_class
 
-verilog simulatorで：
-スマートな手順とは思えませんが、、、
-よりよい方法があれば教えてください。
+コンパイル済ファイルは下記リンクから入手できます↓
+https://github.com/rfukatani/pylink/releases/download/v0.1/call_python_class.exe
 
+* modelsimで(構成済dllを使う)：
+dllをダウンロード下記リンクからダウンロードします↓
+modelsimでワークディレクトリを作製していない場合は
+>>>vlib work
+のようにワークディレクトリを作成してください。
+
+https://github.com/rfukatani/pylink/releases/download/v0.1/cimports.dll
+
+modelsimにて、top.svをコンパイルしてください。
+>>>vlog top.sv
+そして下記のようにdllをインポートしてシミュレーションを実行します。
+>>>vsim -c -sv_lib cimports top -do "add wave -r /*;run -all;quit -sim"
+
+コンパイル済ファイルは下記リンクから入手できます↓
+>>>vsim -c -sv_lib cimports top -do "add wave -r /*;run -all;quit -sim"
+してください。
+
+* modelsimで(dllをコンパイルする)：
 modelsimにて、top.svをコンパイルしてください。
 そして以下のコマンドをmodelsim上で入力し、dll作成に必要なファイルを吐き出させます。
 >>>vlog -novopt -dpiheader dpiheader.h top.sv
