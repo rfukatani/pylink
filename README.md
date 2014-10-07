@@ -38,10 +38,11 @@ DPI-Cƒ^ƒXƒN‚ðŒÄ‚Ño‚·topƒ‚ƒWƒ…[ƒ‹‚ÆADM†‚ðˆ—‚·‚éƒ‚ƒWƒ…[ƒ‹sinc_filter‚ðŠÜ‚ñ‚
 
 ###ƒCƒ“ƒXƒg[ƒ‹
 >>>git clone https://github.com/rfukatani/pylink.git
-‚µ‚Ä‚­‚¾‚³‚¢B
-ƒoƒCƒiƒŠƒtƒ@ƒCƒ‹‚Í•K—v‚É‰ž‚¶‚Äƒ_ƒEƒ“ƒ[ƒh‚µ‚Ä‚­‚¾‚³‚¢Bƒ\[ƒXƒtƒ@ƒCƒ‹‚©‚çƒRƒ“ƒpƒCƒ‹‚·‚é‚±‚Æ‚à‰Â”\‚Å‚·BŽg—p‚·‚éê‡‚Íƒ\[ƒXƒtƒ@ƒCƒ‹‚Æ“¯‚¶ƒfƒBƒŒƒNƒgƒŠ‚É‚¨‚­•K—v‚ª‚ ‚è‚Ü‚·B
 
-ƒRƒ“ƒpƒCƒ‹Ïcƒtƒ@ƒCƒ‹‚Í‰º‹LƒŠƒ“ƒN‚©‚ç“üŽè‚Å‚«‚Ü‚·«
+‚µ‚Ä‚­‚¾‚³‚¢B
+dllA.exeƒtƒ@ƒCƒ‹‚Í•K—v‚É‰ž‚¶‚Ä‰º‹LƒŠƒ“ƒN‚©‚çƒ_ƒEƒ“ƒ[ƒh‚µ‚Ä‚­‚¾‚³‚¢Bƒ\[ƒXƒtƒ@ƒCƒ‹‚©‚çƒRƒ“ƒpƒCƒ‹‚·‚é‚±‚Æ‚à‰Â”\‚Å‚·BŽg—p‚·‚éê‡‚Íƒ\[ƒXƒtƒ@ƒCƒ‹‚Æ“¯‚¶ƒfƒBƒŒƒNƒgƒŠ‚É‚¨‚­•K—v‚ª‚ ‚è‚Ü‚·B
+
+ƒRƒ“ƒpƒCƒ‹Ïcƒtƒ@ƒCƒ‹(.exe)‚Í‰º‹LƒŠƒ“ƒN‚©‚ç“üŽè‚Å‚«‚Ü‚·«
 https://github.com/rfukatani/pylink/releases/download/v0.1/call_python_class.exe
 
 \¬Ïdll‚Í‰º‹LƒŠƒ“ƒN‚©‚çƒ_ƒEƒ“ƒ[ƒh‚µ‚Ü‚·«
@@ -111,4 +112,4 @@ Python,C,systemverilog‚Ì‚Ç‚±‚ª‚¨‚©‚µ‚¢‚©‚í‚©‚ç‚È‚­‚È‚Á‚½‚çAverilog simulator‚Å‘
 2014.10.04:‚Æ‚è‚ ‚¦‚¸“®‚­”Å‚Æ‚µ‚ÄŒöŠJ‚µ‚Ü‚µ‚½B•s”õ‚ª‚ ‚è‚Ü‚µ‚½‚çAnannyakannya@gmail.com‚²Žw“E‚¢‚½‚¾‚¯‚ê‚ÎK‚¢‚Å‚·B
 
 ###ÅŒã‚ÉF
-‚±‚ÌƒvƒƒWƒFƒNƒg‚Í2014/10/3 Design solution forum‚É‚¨‚¢‚ÄŠJÃ‚³‚ê‚½systemverilogƒnƒbƒJƒ\ƒ“‚É‚¨‚¢‚ÄŠJ”­‚³‚ê‚½‚à‚Ì‚Å‚·Bƒ‚ƒfƒŒ[ƒ^‚Ì@vengineer—lADesign solution forum‰^‰c‚ÌŠF—lA‚»‚Ì‘¼‚²Žx‰‡‚¢‚½‚¾‚¢‚½ŠF—l‚É‚±‚Ìê‚ðŽØ‚è‚Ä‚¨—ç\‚µã‚°‚Ü‚·B
+‚±‚ÌƒvƒƒWƒFƒNƒg‚Í2014/10/3 Design solution forum‚É‚¨‚¢‚ÄŠJÃ‚³‚ê‚½systemverilogƒnƒbƒJƒ\ƒ“‚É‚¨‚¢‚Ä”­•\‚à‚Ì‚Å‚·Bƒ‚ƒfƒŒ[ƒ^‚Ì@vengineer—lADesign solution forum‰^‰c‚ÌŠF—lA‚»‚Ì‘¼‚²Žx‰‡‚¢‚½‚¾‚¢‚½ŠF—l‚É‚±‚Ìê‚ðŽØ‚è‚Ä‚¨—ç\‚µã‚°‚Ü‚·B‹ÆŠE‰‚ÌŽŽ‚Ý–â‚¤‚±‚Æ‚Å‚µ‚½‚ªA‚¨‚à‚µ‚ë‚¢‹@‰ï‚ð—^‚¦‚Ä‚¢‚½‚¾‚«‚ ‚è‚ª‚Æ‚¤‚²‚´‚¢‚Ü‚µ‚½B
