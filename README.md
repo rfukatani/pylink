@@ -67,20 +67,21 @@ https://github.com/rfukatani/pylink/releases/download/v0.1/call_python_class.exe
 
 * modelsimで(構成済dllを使う)：
 dllをダウンロード下記リンクからダウンロードします↓
-modelsimでワークディレクトリを作製していない場合は
->>>vlib work
-のようにワークディレクトリを作成してください。
-
 https://github.com/rfukatani/pylink/releases/download/v0.1/cimports.dll
 
-modelsimにて、top.svをコンパイルしてください。
->>>vlog top.sv
-そして下記のようにdllをインポートしてシミュレーションを実行します。
->>>vsim -c -sv_lib cimports top -do "add wave -r /*;run -all;quit -sim"
+modelsimでワークディレクトリを作製していない場合は
 
-コンパイル済ファイルは下記リンクから入手できます↓
+>>>vlib work
+
+のようにワークディレクトリを作成してください。
+
+modelsimにて、top.svをコンパイルしてください。
+
+>>>vlog top.sv
+
+そして下記のようにdllをインポートしてシミュレーションを実行します。
+
 >>>vsim -c -sv_lib cimports top -do "add wave -r /*;run -all;quit -sim"
-してください。
 
 * modelsimで(dllをコンパイルする)：
 modelsimにて、top.svをコンパイルしてください。
